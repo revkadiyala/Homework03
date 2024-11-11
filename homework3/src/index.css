@@ -1,0 +1,95 @@
+/* index.css */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #e9ecef;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.App {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+.task_manager {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.task_manager h1 {
+  font-size: 30px;
+  color: #212529;
+  margin-bottom: 25px;
+}
+
+.task_manager input[type="text"] {
+  width: 70%;
+  padding: 12px;
+  margin-right: 10px;
+  border: 2px solid #0d6efd;
+  border-radius: 10px;
+}
+
+.task_manager button {
+  padding: 12px 20px;
+  border: none;
+  background-color: #0d6efd;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.task_manager button:hover {
+  background-color: #0a58ca;
+}
+
+.task_manager ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 25px;
+}
+
+.task_manager li {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  padding: 12px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.task_manager li:last-child {
+  border-bottom: none;
+}
+
+.task_manager li span {
+  cursor: pointer;
+  color: #495057;
+}
+
+.task_manager li button {
+  background-color: #e03131;
+  border-radius: 5px;
+}
+
+.task_manager li button:hover {
+  background-color: #c92a2a;
+}
+
+.task_manager .task_counts {
+  margin-top: 25px;
+  font-size: 15px;
+  color: #495057;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
